@@ -2,7 +2,7 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Navigate, Routes, } from 'react-router-dom';
 import Homepage from './Homepage';
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
 
   return (
@@ -18,6 +18,7 @@ function App() {
         </Routes>
 
     </Router>
+    <Analytics />
     </>
   )
 }
