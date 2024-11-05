@@ -3,6 +3,8 @@ import './App.css'
 import { BrowserRouter as Router, Route, Navigate, Routes, } from 'react-router-dom';
 import Homepage from './Homepage';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 function App() {
 
   return (
@@ -19,6 +21,7 @@ function App() {
 
     </Router>
     <Analytics />
+    <SpeedInsights />
     </>
   )
 }
