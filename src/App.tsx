@@ -1,6 +1,6 @@
 
 import './App.css'
-import { BrowserRouter as Router, Route, Navigate, Routes, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Homepage from './Homepage';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         {/* Add other routes here */}
 
         {/* Catch-all route for 404s */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<>not found</>} />
         </Routes>
 
     </Router>
