@@ -15,7 +15,7 @@ const Homepage = () => {
           content="Welcome to Vijay Shankar's portfolio website"
         />
       </Helmet>
-      Homepage
+    
     </div>
   );
 };

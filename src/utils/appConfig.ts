@@ -1,4 +1,4 @@
-import { AppConfigType } from "./types";
+import { AppConfigType } from "../types";
 
 export const appConfig:AppConfigType = {
     isMaintainanceMode:true 
