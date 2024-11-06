@@ -26,8 +26,7 @@ const Maintenance = () => {
         </h1>
         <p className="text-xl mb-6 text-gray-300">
           My website is undergoing scheduled maintenance as I work on some
-          exciting updates. Please check back soon, I promise it'll be worth the
-          wait!
+          exciting updates.
         </p>
         <p className="text-sm text-gray-400 mb-8">
           In the meantime, if you have any urgent inquiries, feel free to reach

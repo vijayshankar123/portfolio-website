@@ -2,16 +2,32 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 p-5">
-      <div className="max-w-7xl mx-auto flex justify-between items-center text-white">
-        <h1 className="text-3xl font-semibold">Vijay Shankar</h1>
+    <header className="bg-gray-900 text-white py-4">
+      <div className="max-w-4xl mx-auto flex justify-between items-center px-4">
+        <h1 className="text-3xl font-semibold">
+          <Link to="/">Vijay Shankar</Link>
+        </h1>
         <nav>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-8">
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/" className="hover:text-yellow-400">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/about" className="hover:text-yellow-400">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" className="hover:text-yellow-400">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-yellow-400">
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
