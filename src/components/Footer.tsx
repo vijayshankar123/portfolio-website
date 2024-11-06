@@ -7,8 +7,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="max-w-4xl mx-auto flex justify-between items-center">
+    <footer className="bg-gray-800 text-white py-4 px-4 md:px-8">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0">
         <div className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Vijay Shankar. All rights reserved.
         </div>
