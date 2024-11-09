@@ -12,13 +12,29 @@ import { appConfig } from './utils/appConfig';
 import Maintenance from './components/Maintainance';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { useRef } from 'react';
 
 function App() {
   const { isMaintainanceMode } = appConfig;
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const refMapping = {
+    about: aboutRef,
+    experience: experienceRef,
+    contact: contactRef,
+  };
+
+  function scrollToSection(section: keyof typeof refMapping) {
+    const ref = refMapping[section];
+    ref?.current?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <>
       <Router>
-        <Header />
+        <Header scrollToSection={scrollToSection} />
         <Routes>
           {isMaintainanceMode ? (
             <>
@@ -30,7 +46,15 @@ function App() {
             </>
           ) : (
             <>
-              <Route path="/" element={<Homepage />} />
+              <Route
+                path="/"
+                element={
+                  <Homepage
+                    scrollToSection={scrollToSection}
+                    refMapping={refMapping}
+                  />
+                }
+              />
               {/* Add other routes here */}
 
               {/* Catch-all route for 404s */}
