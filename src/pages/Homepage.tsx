@@ -18,12 +18,12 @@ const Homepage: FC<Props> = ({ refMapping, scrollToSection }) => {
   return (
     <div>
       <Helmet>
-        <title>My Portfolio</title>
+        <title>Vijay | Portfolio</title>
         <meta
           name="description"
-          content="Welcome to Vijay Shankar's portfolio website"
+          content="Welcome to Vijay's portfolio website"
         />
-        <meta property="og:title" content="My Portfolio" />
+        <meta property="og:title" content="Vijay | Portfolio" />
         <meta
           property="og:description"
           content="Welcome to Vijay Shankar's portfolio website"
