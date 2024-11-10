@@ -63,7 +63,7 @@ const MainSection = ({ scrollToSection }: { scrollToSection: Function }) => {
 
         {/* Right Section: Profile Picture */}
         <motion.div
-          className="mt-8 md:mt-0 md:w-1/2 flex justify-center items-center relative"
+          className="mt-8 md:mt-0 md:w-[45%] flex justify-center items-center relative"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
