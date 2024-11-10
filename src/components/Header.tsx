@@ -54,14 +54,14 @@ const Header = ({ scrollToSection }: { scrollToSection: Function }) => {
         >
           About
         </Link>
-        <Link
+        {/* <Link
           to="#experience"
           // scroll={scrollWithOffset}
           onClick={() => scrollToSection('experience')}
           className="hover:text-yellow-400"
         >
           Experience
-        </Link>
+        </Link> */}
         <Link
           to="/#contact"
           onClick={() => scrollToSection('contact')}
@@ -99,7 +99,7 @@ const Header = ({ scrollToSection }: { scrollToSection: Function }) => {
       </div>
 
       {/* Dropdown Button for Small Screens */}
-      <div className="md:hidden relative" ref={dropdownRef}>
+      <div className="md:hidden relative top-1" ref={dropdownRef}>
         <button
           onClick={toggleMenu}
           className="text-yellow-400 focus:outline-none"
@@ -153,13 +153,13 @@ const Header = ({ scrollToSection }: { scrollToSection: Function }) => {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               to="#experience"
               onClick={() => scrollToSection('experience')}
               className="block py-2 px-4 hover:bg-gray-700"
             >
               Experience
-            </Link>
+            </Link> */}
             <Link
               to="#contact"
               onClick={() => scrollToSection('contact')}
