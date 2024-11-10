@@ -13,6 +13,7 @@ import Maintenance from './components/Maintainance';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const { isMaintainanceMode } = appConfig;
@@ -64,8 +65,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-      {/* enable analytics once dev is done */}
-      {/* <Analytics /> */}
+      <Analytics />
       <SpeedInsights />
     </>
   );
