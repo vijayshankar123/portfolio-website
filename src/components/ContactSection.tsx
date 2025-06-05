@@ -73,7 +73,7 @@ const ContactSection = () => {
             className="text-yellow-400 text-4xl mb-4"
           />
           <h3 className="text-xl font-semibold text-gray-100 mb-2">Location</h3>
-          <p className="text-gray-500 text-lg">Kerala, India</p>
+          <p className="text-gray-500 text-lg">Bangalore, India</p>
         </motion.div>
       </div>
     </motion.section>
