@@ -56,7 +56,7 @@ const MainSection = ({ scrollToSection }: { scrollToSection: Function }) => {
               rel="noopener noreferrer"
               className="bg-transparent border-2 border-teal-400 sm:text-base text-sm text-teal-400 font-semibold sm:py-2 sm:px-6  py-1 px-4 rounded-full shadow-lg hover:bg-teal-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105"
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </motion.div>
